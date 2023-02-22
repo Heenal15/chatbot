@@ -1,0 +1,203 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hello, there",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thanks a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "prescription",
+      "patterns": [
+        "How can I get a repeat prescription?",
+        "What is the process for ordering repeat prescriptions for my children?"
+      ],
+      "responses": [
+        "Ask your GP sugery how you should let them know when you need your repeat prescription. They can send your request to a pharmacy."
+      ]
+    },
+    {
+      "tag": "prescription-NHS",
+      "patterns": [
+        "Can I use my NHS account to order a repeat prescription?"
+      ],
+      "responses": [
+        "You can order a repeat prescription by logging into your account using the NHS app or NHS website. If you're asked to nominate a pharmacy, you can only nominate a high street pharmacy.You'll be able to collect your medicine in person when it's ready. Some high street pharmacies also deliver."
+      ]
+    },
+    {
+      "tag": "about-repeat-prescription",
+      "patterns": [
+        "What is a repeat prescription?",
+        "Can you tell me about repeat prescriptions",
+        "I want to know about repeat prescriptions"
+      ],
+      "responses": [
+        "If you take medicine regularly you'll usually have a repeat prescription. This means you can order your medicine when you need it without having to see a GP until your next medicine review."
+      ]
+    },
+    {
+      "tag": "prescription-online",
+      "patterns": [
+        "Can I order my prescription online?",
+        "Can I order my repeat prescription online?",
+        "How can I order my prescription online?",
+        "How can I order my repeat prescription online?",
+        "Can you tell me about online prescription services",
+        "I would like to know about online prescription services",
+        "How do I order repeat prescriptions online?",
+        "How can I get a repeat prescription online?"
+
+      ],
+      "responses": [
+        "There are online services and apps you can use to order a repeat prescription. Some GP online services are only available in certain areas. Ask your GP surgery which service your GP surgery uses."
+      ]
+    },
+    {
+      "tag": "apppointment-booking",
+      "patterns": [
+        "How do I book an appointment?",
+        "I want to see my GP",
+        "I want to book an appointment",
+        "I would like to see a doctor",
+        "I want to see a doctor",
+        "I would like to book an appointment"
+      ],
+      "responses": [
+        "You can book an appointment to see your GP online, by phone or in-person, by going into the surgery and talking to the receptionist."
+      ]
+    },
+    {
+      "tag": "apppointment-urgent",
+      "patterns": [
+        "How do I book an appointment urgently?",
+        "I want to see my GP urgently",
+        "I want to book an appointment urgently",
+        "I would like to see a doctor urgently",
+        "I want to see a doctor urgently",
+        "I would like to book an appointment urgently",
+        "Urgently see the doctor"
+      ],
+      "responses": [
+        "Call your GP surgery if you need an urgent appointment. If your GP surgery is closed, call 999 if it is an emergency or 111 if you have any urgent queries"
+      ]
+    },
+    {
+      "tag": "apppointment-changes",
+      "patterns": [
+        "How do I cancel an appointment?",
+        "I would like to change my appointment",
+        "I would like to cancel my appointment",
+        "How do I reschedule an appointment?",
+        "How do I cancel an appointment?",
+        "Change appointment booking",
+        "Cancel appointment booking",
+        "Reschedule appointment booking"
+      ],
+      "responses": [
+        "You can book,cancel or change your GP appointment by contacting GP surgery by phone or through their website."
+      ]
+    },
+    {
+      "tag": "apppointment-online",
+      "patterns": [
+        "How do I cancel an appointment online?",
+        "I would like to change my appointment online",
+        "I would like to cancel my appointment online",
+        "How do I reschedule an appointment online?",
+        "How do I cancel an appointment online?",
+        "How do I book an appointment online?",
+        "Change appointment booking online",
+        "Cancel appointment booking online",
+        "Reschedule appointment booking online",
+        "Book appointment online"
+      ],
+      "responses": [
+        "If you are registered with a GP surgery, you can use their online services to book, check or cancel appointments with a healthcare professional."
+      ]
+    },
+    {
+      "tag": "vaccinations",
+      "patterns": [
+        "How do I cancel an appointment online?"
+      ],
+      "responses": [
+        "If you are registered with a GP surgery, you can use their online services to book, check or cancel appointments with a healthcare professional."
+      ]
+    },
+    {
+      "tag": "medical-records",
+      "patterns": [
+        "How do I cancel an appointment online?"
+      ],
+      "responses": [
+        "If you are registered with a GP surgery, you can use their online services to book, check or cancel appointments with a healthcare professional."
+      ]
+    },
+    {
+      "tag": "test-results",
+      "patterns": [
+        "How do I cancel an appointment online?",
+        "I would like to change my appointment online"
+      ],
+      "responses": [
+        "If you are registered with a GP surgery, you can use their online services to book, check or cancel appointments with a healthcare professional."
+      ]
+    },
+    {
+      "tag": "mental-health",
+      "patterns": [
+        "How do I cancel an appointment online?",
+        "I would like to change my appointment online"
+      ],
+      "responses": [
+        "If you are registered with a GP surgery, you can use their online services to book, check or cancel appointments with a healthcare professional."
+      ]
+    },
+    {
+      "tag": "home-visit",
+      "patterns": [
+        "How do I cancel an appointment online?",
+        "I would like to change my appointment online"
+      ],
+      "responses": [
+        "If you are registered with a GP surgery, you can use their online services to book, check or cancel appointments with a healthcare professional."
+      ]
+    },
+    {
+      "tag": "sick-note",
+      "patterns": [
+        "How do I cancel an appointment online?",
+        "I would like to change my appointment online"
+      ],
+      "responses": [
+        "If you are registered with a GP surgery, you can use their online services to book, check or cancel appointments with a healthcare professional."
+      ]
+    }
+  ]
+}
