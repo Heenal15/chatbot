@@ -62,6 +62,15 @@
       ]
     },
     {
+      "tag": "GP-repeat-prescription",
+      "patterns": [
+        "Do I need to see my GP to order a repeat prescription?"
+      ],
+      "responses": [
+        "You do not need to see a GP to order a repeat prescription. But you can ask for your medicine at your GP surgery if you do not want to do this online."
+      ]
+    },
+    {
       "tag": "prescription-online",
       "patterns": [
         "Can I order my prescription online?",
@@ -96,11 +105,13 @@
       "tag": "apppointment-urgent",
       "patterns": [
         "How do I book an appointment urgently?",
+        "How can I  book an appointment urgently?",
         "I want to see my GP urgently",
         "I want to book an appointment urgently",
         "I would like to see a doctor urgently",
         "I want to see a doctor urgently",
         "I would like to book an appointment urgently",
+        "What is the policy for urgent appointments?",
         "Urgently see the doctor"
       ],
       "responses": [
@@ -114,6 +125,7 @@
         "I would like to change my appointment",
         "I would like to cancel my appointment",
         "How do I reschedule an appointment?",
+        "How to reschedule my appointment?",
         "How do I cancel an appointment?",
         "Change appointment booking",
         "Cancel appointment booking",
@@ -132,71 +144,255 @@
         "How do I reschedule an appointment online?",
         "How do I cancel an appointment online?",
         "How do I book an appointment online?",
+        "Can I book my appointment online?",
         "Change appointment booking online",
         "Cancel appointment booking online",
         "Reschedule appointment booking online",
         "Book appointment online"
       ],
       "responses": [
-        "If you are registered with a GP surgery, you can use their online services to book, check or cancel appointments with a healthcare professional."
+        "If you are registered with a GP surgery, you can use their online services to book, check or cancel appointments with a healthcare professional. Most GP clinics have online services to book appointments such as SystmOnline."
       ]
     },
     {
-      "tag": "vaccinations",
+      "tag": "missed-apppointment",
       "patterns": [
-        "How do I cancel an appointment online?"
+        "What should I do if I missed my appointment?"
       ],
       "responses": [
-        "If you are registered with a GP surgery, you can use their online services to book, check or cancel appointments with a healthcare professional."
+        "The first time a patient fails to attend a booked appointment we will send them a DNA (did not attend) letter reminding them that in future they must cancel appointments if they are unable to attend. After three failure to attend letters we will consider advising you to register with another surgery."
+      ]
+    },
+    {
+      "tag": "wait-apppointment",
+      "patterns": [
+        "How long will I have to wait for my appointment?"
+      ],
+      "responses": [
+        "The waiting time for an appointment can vary depending on the availability of your GP and the urgency of your condition. If you require urgent medical attention, your GP may be able to offer you an appointment on the same day."
+      ]
+    },
+    {
+      "tag": "no-apppointment",
+      "patterns": [
+        "Can I see a GP without an appointment?"
+      ],
+      "responses": [
+        "It is usually necessary to make an appointment to see a GP in the UK. However, some practices offer walk-in clinics or same-day appointments for urgent concerns."
+      ]
+    },
+    {
+      "tag": "specialist-referrals",
+      "patterns": [
+        "How can I see a specialist?",
+        "What is the process for a referral?"
+      ],
+      "responses": [
+        "A specialist will only see you with a letter of referral from your GP. The letter will give the specialist essential background information, such as your medical history, and it'll also contain details that the specialist needs to pay particular attention to.",
+        "You're entitled to ask for a referral for specialist treatment on the NHS. If you wish to be referred to a specialist in a particular field, such as a cardiologist or gynaecologist, you should see the GP you are registered with."
+      ]
+    },
+    {
+      "tag": "cancellation-policy",
+      "patterns": [
+        "What is the policy on cancelling appointments?"
+      ],
+      "responses": [
+        "Cancellations can be done online or over the phone. Cancellations notified less than 30 minutes before the appointment time will be recorded as failure to attend (DNA)."
+      ]
+    },
+    {
+      "tag": "opening-hours",
+      "patterns": [
+        "What are the practice's opening hours?"
+      ],
+      "responses": [
+        "The opening hours for most GP practices are 8:00 am to 6:30 pm on any day from Monday to Friday, excluding bank holidays."
+      ]
+    },
+    {
+      "tag": "out-of-hours",
+      "patterns": [
+        "Who do I contact in the case of a medical emergency outside of surgery hours?"
+      ],
+      "responses": [
+        "If your GP surgery is closed, call 999 if it is an emergency or 111 if you have any urgent queries."
+      ]
+    },
+    {
+      "tag": "complaints",
+      "patterns": [
+        "How do I make a complaint?"
+      ],
+      "responses": [
+        "You can either complain to the NHS service provider directly (such as a GP, dentist surgery or hospital) or to the commissioner of the services, which is the body that pays for the NHS services you use. You cannot apply to both."
+      ]
+    },
+    {
+      "tag": "flu-vaccinations",
+      "patterns": [
+        "Can I receive a flu vaccination at the surgery?"
+      ],
+      "responses": [
+        "If you're eligible for a free flu vaccine, you can book an appointment at your GP surgery."
+      ]
+    },
+    {
+      "tag": "travel-vaccinations",
+      "patterns": [
+        "Can I get travel vaccinations from my GP?"
+      ],
+      "responses": [
+        "If the GP practice is signed up to provide NHS travel vaccines, these can be provided to you free of charge. Other non-NHS travel vaccines may be charged for by the GP."
       ]
     },
     {
       "tag": "medical-records",
       "patterns": [
-        "How do I cancel an appointment online?"
+        "How can I access my medical records?"
       ],
       "responses": [
-        "If you are registered with a GP surgery, you can use their online services to book, check or cancel appointments with a healthcare professional."
+        "Medical records hold information about you. You'll have separate records for any NHS service you go to including your GP surgery, hospital, dentist or opticians. Your GP record includes information like any conditions or allergies you have and any medicine you're taking. There are 3 ways to access your medical records: using your NHS account, other online services and directly speaking to your GP surgery."
+      ]
+    },
+    {
+      "tag": "medical-records-NHS",
+      "patterns": [
+        "How can I access my medical records using my NHS account?"
+      ],
+      "responses": [
+        "You can get your GP record by logging into your account using the NHS app or NHS website. First, you need to register for online services and prove who you are. You can do this when you create an account.You'll need to ask your GP surgery for online access to your full record, or you'll only see your medicines and allergies."
+      ]
+    },
+    {
+      "tag": "medical-records-online",
+      "patterns": [
+        "How can I access my medical records using online services?"
+      ],
+      "responses": [
+        "You might be able to use other GP online services and apps to get your GP record. First, you need to register for online services and prove who you are. You'll need to ask your GP surgery for online access to your full record, or you'll only see your medicines and allergies. Some services and apps are only available in certain areas. Ask your GP surgery which one you can use."
       ]
     },
     {
       "tag": "test-results",
       "patterns": [
-        "How do I cancel an appointment online?",
-        "I would like to change my appointment online"
+        "How do I access my test results?"
       ],
       "responses": [
-        "If you are registered with a GP surgery, you can use their online services to book, check or cancel appointments with a healthcare professional."
+        "If you are registered for online service you can access your test results directly via the NHS app, otherwise you should call your GP."
+      ]
+    },
+    {
+      "tag": "register-GP",
+      "patterns": [
+        "How do I register with a GP?",
+        "Is it free to register with a GP surgery in England?"
+      ],
+      "responses": [
+        "Anyone in England can register with a GP surgery. It's free to register. You do not need proof of address or immigration status, ID or an NHS number. GP surgeries are usually the first contact if you have a health problem. They can treat many conditions and give health advice. They can also refer you to other NHS services."
+      ]
+    },
+    {
+      "tag": "outside-area-register-GP",
+      "patterns": [
+        "Can I register with a GP surgery outside the area I live?"
+      ],
+      "responses": [
+        "Yes, you can. However, the GP surgery can refuse registration for reasons such as they are not taking new patients or it's too far away from your home and you need home visits."
+      ]
+    },
+    {
+      "tag": "restriction-outside-area-GP",
+      "patterns": [
+        "Are there any restrictions on registering with a GP surgery outside my area?"
+      ],
+      "responses": [
+        "The surgery will decide if they can accept you as a regular patient or accept you without home visits."
+      ]
+    },
+    {
+      "tag": "refuse-outside-area-GP",
+      "patterns": [
+        "Can a GP surgery refuse registration for any reasons?",
+        "What are some reasons that a GP surgery may refuse registration?"
+      ],
+      "responses": [
+        "The GP surgery can refuse registration for reasons such as they are not taking new patients or it's too far away from your home and you need home visits."
+      ]
+    },
+    {
+      "tag": "home-visit-outside-area",
+      "patterns": [
+        "Can a GP surgery offer home visits if I register with them from outside their area?"
+      ],
+      "responses": [
+        "If you live outside of their area, the GP surgery might not be able to offer home visits. Other arrangements might be made if you are not well enough to go to the GP surgery. Contact your GP for further information."
+      ]
+    },
+    {
+      "tag": "find-GP",
+      "patterns": [
+        "How do I find a GP surgery in the area where I want to register?"
+      ],
+      "responses": [
+        "You can find a GP on the NHS website."
+      ]
+    },
+    {
+      "tag": "change-register-GP",
+      "patterns": [
+        "How do I change my registered GP?"
+      ],
+      "responses": [
+        "You can change your GP surgery if you need to. This might be because: you have moved, you have had problems with your current practice, you were removed from the patient list. You should tell the GP surgery if you change address or move out of the area."
       ]
     },
     {
       "tag": "mental-health",
       "patterns": [
-        "How do I cancel an appointment online?",
-        "I would like to change my appointment online"
+        "Can I receive support for managing a mental health condition?"
       ],
       "responses": [
-        "If you are registered with a GP surgery, you can use their online services to book, check or cancel appointments with a healthcare professional."
+        "You can receive a mental health referral from your GP. When you talk to your GP about your mental health they'll listen, give you advice and introduce you to a mental health service they think will be most helpful to you."
       ]
     },
     {
       "tag": "home-visit",
       "patterns": [
-        "How do I cancel an appointment online?",
-        "I would like to change my appointment online"
+        "What is the process for requesting a home visit?",
+        "What arrangements can be made if I am not well enough to go to the GP surgery?"
+
       ],
       "responses": [
-        "If you are registered with a GP surgery, you can use their online services to book, check or cancel appointments with a healthcare professional."
+        "A GP will only visit you at home if they think that your medical condition requires it. A GP can also decide how urgently a visit is needed. Due to increasing demand GPs can no longer automatically visit any patient who requests a home visit. All visits must now be triaged and dealt with according to clinical need.",
+        "If you live in their area, home visits can be made. Contact your GP for further information."
+      ]
+    },
+    {
+      "tag": "GP-visit",
+      "patterns": [
+        "How often should I see my GP?"
+      ],
+      "responses": [
+        "The frequency of your visits to your GP will depend on your individual health needs. Some people may only need to see their GP once or twice a year, while others may need more frequent check-ups."
       ]
     },
     {
       "tag": "sick-note",
       "patterns": [
-        "How do I cancel an appointment online?",
-        "I would like to change my appointment online"
+        "What is the process for getting a sick note?"
       ],
       "responses": [
-        "If you are registered with a GP surgery, you can use their online services to book, check or cancel appointments with a healthcare professional."
+        "Sick notes are free if the employee has been ill for more than 7 days when they ask for one. The healthcare professional might charge a fee if the employee has been ill for 7 days or less."
+      ]
+    },
+    {
+      "tag": "GP-sick-note",
+      "patterns": [
+        "Can my GP provide me with a sick note?"
+      ],
+      "responses": [
+        "Yes, if you are unable to work due to illness or injury, your GP can provide you with a sick note to give to your employer. The sick note will outline the duration of your illness or injury and any limitations you may have on your ability to work."
       ]
     }
   ]
