@@ -164,6 +164,15 @@
       ]
     },
     {
+      "tag": "evening-weekend-apppointment",
+      "patterns": [
+        "How can you access evening and weekend appointments?"
+      ],
+      "responses": [
+        "Some GP surgeries offer evening and weekend appointments. Appointments are available from 6.30-8pm in the evenings, 9am to 5pm on Saturdays and Sundays. You can request to book an appointment during these times by calling your GP."
+      ]
+    },
+    {
       "tag": "wait-apppointment",
       "patterns": [
         "How long will I have to wait for my appointment?"
@@ -249,10 +258,12 @@
     {
       "tag": "medical-records",
       "patterns": [
-        "How can I access my medical records?"
+        "How can I access my medical records?",
+        "When will patients be automatically given access to more information added to their GP record?"
       ],
       "responses": [
-        "Medical records hold information about you. You'll have separate records for any NHS service you go to including your GP surgery, hospital, dentist or opticians. Your GP record includes information like any conditions or allergies you have and any medicine you're taking. There are 3 ways to access your medical records: using your NHS account, other online services and directly speaking to your GP surgery."
+        "Medical records hold information about you. You'll have separate records for any NHS service you go to including your GP surgery, hospital, dentist or opticians. Your GP record includes information like any conditions or allergies you have and any medicine you're taking. There are 3 ways to access your medical records: using your NHS account, other online services and directly speaking to your GP surgery.",
+        "Most patients who use online services will automatically be given access to more information added to their GP record from November 2022 onwards, including letters, test results and appointment notes."
       ]
     },
     {
@@ -393,6 +404,142 @@
       ],
       "responses": [
         "Yes, if you are unable to work due to illness or injury, your GP can provide you with a sick note to give to your employer. The sick note will outline the duration of your illness or injury and any limitations you may have on your ability to work."
+      ]
+    },
+    {
+      "tag": "online-consulation",
+      "patterns": [
+        "Are online consultations available at all GP surgeries?"
+      ],
+      "responses": [
+        "Most GP surgeries, hospitals, mental health services and community care services now offer video consultations. This is where you speak to a doctor or healthcare professional using the video camera in your smartphone, tablet or computer."
+      ]
+    },
+    {
+      "tag": "face-to-face-changes",
+      "patterns": [
+        "How has face-to-face appointments changed due to the pandemic?"
+      ],
+      "responses": [
+        "Appointments may take place by phone, video, or face-to-face depending on your clinical need."
+      ]
+    },
+    {
+      "tag": "video-consultation",
+      "patterns": [
+        "What are video consultations and who offers them?"
+      ],
+      "responses": [
+        "A video call is very similar to a face-to-face appointment. You will get the same care. This is where you speak to a doctor or healthcare professional using the video camera in your smartphone, tablet or computer."
+      ]
+    },
+    {
+      "tag": "prepare-video-consultation",
+      "patterns": [
+        "What are video consultations and who offers them?"
+      ],
+      "responses": [
+        "To have a video consultation you need: a smartphone, tablet or computer that allows video calling – remember to make sure your microphone and camera are switched on, an internet connection, a well-lit, quiet and private space so the GP, nurse or other health professional can see you clearly"
+      ]
+    },
+    {
+      "tag": "during-video-consultation",
+      "patterns": [
+        "What happens during a video consultation?"
+      ],
+      "responses": [
+        "If a GP, doctor or healthcare professional recommends you have a video call, you will get a text, email or letter with a date and time for the appointment. A video call is very similar to a face-to-face appointment. You will get the same care. The GP, doctor or healthcare professional will ask you questions about your health to work out the best treatment for you. You can also ask any questions you may have."
+      ]
+    },
+    {
+      "tag": "video-consultation-issues",
+      "patterns": [
+        "What happens if the video call does not work or you do not have a signal?",
+        "Can you rebook your appointment if the video call does not work or you do not have a signal?"
+      ],
+      "responses": [
+        "If your video call does not work or you do not have signal, they will try a phone call instead. If this is not possible, you will be able to rebook your appointment."
+      ]
+    },
+    {
+      "tag": "video-consultation-questions",
+      "patterns": [
+        "Can you ask questions during a video consultation?"
+      ],
+      "responses": [
+        "Yes, a video call is very similar to a face-to-face appointment. You will get the same care."
+      ]
+    },
+    {
+      "tag": "video-consultation-medicine",
+      "patterns": [
+        "Will the GP or healthcare professional be able to prescribe medicine during a video consultation?"
+      ],
+      "responses": [
+        "If you are prescribed any medicine, the doctor or healthcare professional will give you advice on how to take it. They may talk to you about the best way of getting your prescription."
+      ]
+    },
+    {
+      "tag": "online-health-services",
+      "patterns": [
+        "What kind of health services can be accessed online if you are registered with a GP surgery?"
+      ],
+      "responses": [
+        "If you are registered with a GP surgery, you can access some health services online, such as contacting your GP, nurse or other healthcare professional for advice and support, ordering repeat prescriptions, seeing parts of your health record, including information about medicines, vaccinations and test results, seeing communications between your GP surgery and other services, such as hospitals, and booking, checking or cancelling appointments with a GP, nurse or other healthcare professional."
+      ]
+    },
+    {
+      "tag": "online-health-record",
+      "patterns": [
+        "What kind of information can you see on your health record through online health services?"
+      ],
+      "responses": [
+        "Through online health services, you can see parts of your health record, including information about medicines, vaccinations, and test results, as well as communications between your GP surgery and other services such as hospitals."
+      ]
+    },
+    {
+      "tag": "online-contact",
+      "patterns": [
+        "What kind of healthcare professionals can you contact for advice and support through online health services?"
+      ],
+      "responses": [
+        "You can contact your GP, nurse or other healthcare professional for advice and support through online health services."
+      ]
+    },
+    {
+      "tag": "online-health-service-providers",
+      "patterns": [
+        "How can you find out which online health service providers you can use?"
+      ],
+      "responses": [
+        "To find out which online health service providers you can use, you should check your GP surgery's website to see what services are available online and which providers you can use."
+      ]
+    },
+    {
+      "tag": "online-health-service-register",
+      "patterns": [
+        "How can you register to use online health services?"
+      ],
+      "responses": [
+        "To register to use online health services, you need to prove who you are. You can do this online using NHS login or by using details from your GP surgery to fill in a short registration form."
+      ]
+    },
+    {
+      "tag": "prove-identity-online-services",
+      "patterns": [
+        "How to prove your identity to use online health services?"
+      ],
+      "responses": [
+        "The two ways to prove your identity to use online health services are by proving who you are online using NHS login or by using details from your GP surgery to register."
+      ]
+    },
+    {
+      "tag": "appointment-arrival",
+      "patterns": [
+        "What time should I arrive for my appointment?"
+      ],
+      "responses": [
+        "You should aim to arrive at leat 10 minutes before your appointment."
       ]
     }
   ]
