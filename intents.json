@@ -19,7 +19,7 @@
     },
     {
       "tag": "goodbye",
-      "patterns": ["Bye", "See you later", "Goodbye"],
+      "patterns": ["Bye", "See you later", "Goodbye", "See you", "Okay bye"],
       "responses": [
         "See you later, thanks for visiting",
         "Have a nice day",
@@ -80,7 +80,8 @@
         "Can you tell me about online prescription services",
         "I would like to know about online prescription services",
         "How do I order repeat prescriptions online?",
-        "How can I get a repeat prescription online?"
+        "How can I get a repeat prescription online?",
+        "Prescription online"
 
       ],
       "responses": [
@@ -95,7 +96,10 @@
         "I want to book an appointment",
         "I would like to see a doctor",
         "I want to see a doctor",
-        "I would like to book an appointment"
+        "I would like to book an appointment",
+        "Appointment booking",
+        "Booking an appointment",
+        "What is the appointment booking process?"
       ],
       "responses": [
         "You can book an appointment to see your GP online, by phone or in-person, by going into the surgery and talking to the receptionist."
@@ -222,7 +226,10 @@
     {
       "tag": "out-of-hours",
       "patterns": [
-        "Who do I contact in the case of a medical emergency outside of surgery hours?"
+        "Who do I contact in the case of a medical emergency outside of surgery hours?",
+        "I have a medical emergency and my GP is closed who should I contact?",
+        "Medical emergency and GP is closed",
+        "Out of hours medical emergency"
       ],
       "responses": [
         "If your GP surgery is closed, call 999 if it is an emergency or 111 if you have any urgent queries."
@@ -231,7 +238,12 @@
     {
       "tag": "complaints",
       "patterns": [
-        "How do I make a complaint?"
+        "How do I make a complaint?",
+        "What is the complaints process?",
+        "How do I complain about my experience?",
+        "Where do I complain?",
+        "Complaints process",
+        "Complains"
       ],
       "responses": [
         "You can either complain to the NHS service provider directly (such as a GP, dentist surgery or hospital) or to the commissioner of the services, which is the body that pays for the NHS services you use. You cannot apply to both."
@@ -297,7 +309,9 @@
       "tag": "register-GP",
       "patterns": [
         "How do I register with a GP?",
-        "Is it free to register with a GP surgery in England?"
+        "Is it free to register with a GP surgery in England?",
+        "Can I register with a GP?",
+        "Register with GP"
       ],
       "responses": [
         "Anyone in England can register with a GP surgery. It's free to register. You do not need proof of address or immigration status, ID or an NHS number. GP surgeries are usually the first contact if you have a health problem. They can treat many conditions and give health advice. They can also refer you to other NHS services."
@@ -400,7 +414,9 @@
     {
       "tag": "GP-sick-note",
       "patterns": [
-        "Can my GP provide me with a sick note?"
+        "Can my GP provide me with a sick note?",
+        "I need a sick note",
+        "Sick note"
       ],
       "responses": [
         "Yes, if you are unable to work due to illness or injury, your GP can provide you with a sick note to give to your employer. The sick note will outline the duration of your illness or injury and any limitations you may have on your ability to work."
