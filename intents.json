@@ -35,7 +35,9 @@
       "tag": "prescription",
       "patterns": [
         "How can I get a repeat prescription?",
-        "What is the process for ordering repeat prescriptions for my children?"
+        "What is the process for ordering repeat prescriptions for my children?",
+        "Prescription - what is this?"
+
       ],
       "responses": [
         "Ask your GP sugery how you should let them know when you need your repeat prescription. They can send your request to a pharmacy."
@@ -99,7 +101,10 @@
         "I would like to book an appointment",
         "Appointment booking",
         "Booking an appointment",
-        "What is the appointment booking process?"
+        "What is the appointment booking process?",
+        "How do I see the doctor?",
+        "I need to book an appointment",
+        "Appointment booking process"
       ],
       "responses": [
         "You can book an appointment to see your GP online, by phone or in-person, by going into the surgery and talking to the receptionist."
@@ -198,7 +203,13 @@
       "tag": "specialist-referrals",
       "patterns": [
         "How can I see a specialist?",
-        "What is the process for a referral?"
+        "What is the process for a referral?",
+        "I need to see a specialist",
+        "How do I see a specialist?",
+        "I need a specialist referral",
+        "How can I get a specialist referral from my GP",
+        "Letter of referral",
+        "Specialist referral"
       ],
       "responses": [
         "A specialist will only see you with a letter of referral from your GP. The letter will give the specialist essential background information, such as your medical history, and it'll also contain details that the specialist needs to pay particular attention to.",
@@ -242,6 +253,11 @@
         "What is the complaints process?",
         "How do I complain about my experience?",
         "Where do I complain?",
+        "Where should I complain?",
+        "Where can I complain?",
+        "How can I complain about my experience at the GP?",
+        "I want to write a complaint",
+        "I want to complain",
         "Complaints process",
         "Complains"
       ],
