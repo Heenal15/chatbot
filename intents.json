@@ -675,7 +675,7 @@
         "Arrival time for appointment"
       ],
       "responses": [
-        "You should aim to arrive at leat 10 minutes before your appointment."
+        "You should aim to arrive at least 10 minutes before your appointment."
       ]
     }
   ]
