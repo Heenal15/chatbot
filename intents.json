@@ -192,7 +192,8 @@
       "tag": "wait-apppointment",
       "patterns": [
         "How long will I have to wait for my appointment?",
-        "How long to book an appointment",
+        "How long to book an appointment?",
+        "How long do I have to wait to book an appointment?",
         "Waiting time to book an appointment"
       ],
       "responses": [
@@ -335,6 +336,7 @@
       "tag": "medical-records-NHS",
       "patterns": [
         "How can I access my medical records using my NHS account?",
+        "How do I access my medical records using my NHS account?",
         "Access medical records using NHS account",
         "I want to access my medical records using my NHS account"
       ],
@@ -346,6 +348,7 @@
       "tag": "medical-records-online",
       "patterns": [
         "How can I access my medical records using online services?",
+        "How do I access my medical records using online services?",
         "Access medical records using online services",
         "Using online services, I want to access my medical records"
       ],
@@ -357,6 +360,7 @@
       "tag": "test-results",
       "patterns": [
         "How do I access my test results?",
+        "How can I access my test results?",
         "Access test results",
         "Test results"
       ],
@@ -435,9 +439,10 @@
       ]
     },
     {
-      "tag": "change-register-GP",
+      "tag": "change-GP",
       "patterns": [
         "How do I change my registered GP?",
+        "Can I change my registered GP?",
         "Change registered GP",
         "Change GP",
         "Change GP practice",
@@ -454,7 +459,7 @@
         "Can I receive support for managing a mental health condition?",
         "Mental health support",
         "I am struggling with my mental health",
-        "How can my GP provide mental health support",
+        "How can my GP provide mental health support?",
         "GP mental health support",
         "Mental health"
       ],
@@ -468,7 +473,7 @@
         "What is the process for requesting a home visit?",
         "What arrangements can be made if I am not well enough to go to the GP surgery?",
         "I would like a home visit",
-        "How to book a home visit",
+        "How to book a home visit?",
         "I would like to book a home visit",
         "GP home visit",
         "Home visit"
@@ -511,11 +516,11 @@
       ]
     },
     {
-      "tag": "online-consulation",
+      "tag": "online-consultation",
       "patterns": [
         "Are online consultations available at all GP surgeries?",
         "What is an online consultation?",
-        "Book an online consulation",
+        "Book an online consultation",
         "Online consultation"
       ],
       "responses": [
@@ -588,7 +593,7 @@
       ]
     },
     {
-      "tag": "video-consultation-medicine",
+      "tag": "video-consultation-prescribe",
       "patterns": [
         "Will the GP or healthcare professional be able to prescribe medicine during a video consultation?",
         "Prescribe medicine during a video consultation"

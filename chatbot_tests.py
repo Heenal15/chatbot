@@ -618,7 +618,6 @@ class ChatbotTest(unittest.TestCase):
         expected_output = ["Happy to help!", "Any time!", "My pleasure"]
         self.assertTrue(chat_output.text in expected_output)
     
-
     def tearDown(self):
         # close the webdriver
         self.driver.quit()
