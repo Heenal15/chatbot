@@ -1,4 +1,6 @@
 import unittest
+import random
+import string
 from selenium import webdriver
 from selenium.webdriver.firefox.service import Service
 from webdriver_manager.firefox import GeckoDriverManager
@@ -617,7 +619,18 @@ class ChatbotTest(unittest.TestCase):
         chat_output = self.driver.find_element(by=By.XPATH , value ="//div[@class='msg left-msg']//div[@class='msg-text']")
         expected_output = ["Happy to help!", "Any time!", "My pleasure"]
         self.assertTrue(chat_output.text in expected_output)
-    
+
+    def test_random_string(self):
+        chat_input = self.driver.find_element(by=By.XPATH , value = "//input[@id='textInput']")
+        chat_input.send_keys(" ".join(random.choices(string.ascii_uppercase + string.ascii_lowercase, k=5)))
+        chat_input.send_keys(Keys.RETURN)
+        time.sleep(3)
+        
+        # check if the response matches the expected output
+        chat_output = self.driver.find_element(by=By.XPATH , value ="//div[@class='msg left-msg']//div[@class='msg-text']")
+        expected_output = "Sorry, I am still learning. To help you further, you can find out more information at https://www.nhs.uk/nhs-services/gps/"
+        self.assertEqual(chat_output.text,expected_output)
+
     def tearDown(self):
         # close the webdriver
         self.driver.quit()
