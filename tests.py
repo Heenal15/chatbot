@@ -421,6 +421,17 @@ class ChatbotTest(unittest.TestCase):
         expected_output = "You can get your GP record by logging into your account using the NHS app or NHS website. First, you need to register for online services and prove who you are. You can do this when you create an account.You'll need to ask your GP surgery for online access to your full record, or you'll only see your medicines and allergies."
         self.assertEqual(chat_output.text,expected_output)
 
+    def test_vaccinations(self):
+        chat_input = self.driver.find_element(by=By.XPATH , value = "//input[@id='textInput']")
+        chat_input.send_keys("Tell me about vaccinations")
+        chat_input.send_keys(Keys.RETURN)
+        time.sleep(3)
+        
+        # check if the response matches the expected output
+        chat_output = self.driver.find_element(by=By.XPATH , value ="//div[@class='msg left-msg']//div[@class='msg-text']")
+        expected_output = "Your GP can provide a number of vaccinations such as the flu vaccine and some travel vaccinations."
+        self.assertEqual(chat_output.text,expected_output)
+
     def test_travel_vaccinations(self):
         chat_input = self.driver.find_element(by=By.XPATH , value = "//input[@id='textInput']")
         chat_input.send_keys("Can I get travel vaccinations from my GP?")
@@ -629,6 +640,17 @@ class ChatbotTest(unittest.TestCase):
         # check if the response matches the expected output
         chat_output = self.driver.find_element(by=By.XPATH , value ="//div[@class='msg left-msg']//div[@class='msg-text']")
         expected_output = "Sorry, I am still learning. To help you further, you can find out more information at https://www.nhs.uk/nhs-services/gps/"
+        self.assertEqual(chat_output.text,expected_output)
+    
+    def test_functionality(self):
+        chat_input = self.driver.find_element(by=By.XPATH , value = "//input[@id='textInput']")
+        chat_input.send_keys("What sort of questions can you help with?")
+        chat_input.send_keys(Keys.RETURN)
+        time.sleep(3)
+        
+        # check if the response matches the expected output
+        chat_output = self.driver.find_element(by=By.XPATH , value ="//div[@class='msg left-msg']//div[@class='msg-text']")
+        expected_output = "I am here to help with any questions you may have about your GP. For example, appointment bookings, ordering repeat prescriptions and accessing medical records."
         self.assertEqual(chat_output.text,expected_output)
 
     def tearDown(self):
