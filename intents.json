@@ -32,6 +32,18 @@
       "responses": ["Happy to help!", "Any time!", "My pleasure"]
     },
     {
+      "tag": "functionality",
+      "patterns": [
+        "What can you help with?", 
+        "What is your purpose?", 
+        "What sort of questions can you help with?", 
+        "What kind of questions should I ask?",
+        "What sort of questions?",
+        "Could you provide me with a breakdown of what you can do?"
+      ],
+      "responses": ["I am here to help with any questions you may have about your GP. For example, appointment bookings, ordering repeat prescriptions and accessing medical records."]
+    },
+    {
       "tag": "prescription",
       "patterns": [
         "How can I get a repeat prescription?",
@@ -94,17 +106,21 @@
       "tag": "apppointment-booking",
       "patterns": [
         "How do I book an appointment?",
+        "Tell me about appointment bookings",
         "I want to see my GP",
         "I want to book an appointment",
         "I would like to see a doctor",
         "I want to see a doctor",
         "I would like to book an appointment",
+        "Seeing a doctor",
+        "Visting the doctor",
         "Appointment booking",
         "Booking an appointment",
         "What is the appointment booking process?",
         "How do I see the doctor?",
         "I need to book an appointment",
-        "Appointment booking process"
+        "Appointment booking process",
+        "Appointments"
       ],
       "responses": [
         "You can book an appointment to see your GP online, by phone or in-person, by going into the surgery and talking to the receptionist."
@@ -271,6 +287,9 @@
       "tag": "complaints",
       "patterns": [
         "How do I make a complaint?",
+        "How to make a complain?",
+        "I had a bad experience and I want to complain",
+        "Negative experience with my GP",
         "What is the complaints process?",
         "How do I complain about my experience?",
         "Where do I complain?",
@@ -287,9 +306,25 @@
       ]
     },
     {
+      "tag": "vaccinations",
+      "patterns": [
+        "Tell me about vaccinations",
+        "Vaccination at the surgery",
+        "Can I get vaccinated at the surgery",
+        "Vaccinations at GP",
+        "I want to book a vaccination appointment",
+        "Vaccination appointment",
+        "Book a vaccination appointment"
+      ],
+      "responses": [
+        "Your GP can provide a number of vaccinations such as the flu vaccine and some travel vaccinations."
+      ]
+    },
+    {
       "tag": "flu-vaccinations",
       "patterns": [
         "Can I receive a flu vaccination at the surgery?",
+        "How do I get a flu vaccine?",
         "Flu vaccination at the surgery",
         "Can I get a flu jab at the surgery",
         "Flu jab at GP",
