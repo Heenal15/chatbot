@@ -378,7 +378,7 @@ class ChatbotTest(unittest.TestCase):
         
         # check if the response matches the expected output
         chat_output = self.driver.find_element(by=By.XPATH , value ="//div[@class='msg left-msg']//div[@class='msg-text']")
-        expected_output = "Anyone in England can register with a GP surgery. It's free to register. You do not need proof of address or immigration status, ID or an NHS number. GP surgeries are usually the first contact if you have a health problem. They can treat many conditions and give health advice. They can also refer you to other NHS services."
+        expected_output = "Anyone in England can register with a GP surgery. It's free to register. You can register by contacting the surgery and filling out a form. You do not need proof of address or immigration status, ID or an NHS number. GP surgeries are usually the first contact if you have a health problem. They can treat many conditions and give health advice. They can also refer you to other NHS services."
         self.assertEqual(chat_output.text,expected_output)
 
     def test_test_results(self):
@@ -521,7 +521,7 @@ class ChatbotTest(unittest.TestCase):
         
         # check if the response matches the expected output
         chat_output = self.driver.find_element(by=By.XPATH , value ="//div[@class='msg left-msg']//div[@class='msg-text']")
-        expected_output = "Appointments are now available to patients either pre-bookable and on the day from 18:30–20:00 Monday to Friday, Saturday is 8:30—12:30, with pre-booked telephone consultations available on Sunday. During bank holidays appointments will be available 8:30-12:30. If you need to see a GP or practice nurse  during Extended Access times, the appointment may not be at your registered Practice and you may be seen by a clinician from another practice."
+        expected_output = "Appointments are now available to patients either pre-bookable and on the day from 18:30–20:00 Monday to Friday, Saturday is 8:30—12:30, with pre-booked telephone consultations available on Sunday. During bank holidays appointments will be available 8:30-12:30. If you need to see a GP or practice nurse during Extended Access times, the appointment may not be at your registered Practice and you may be seen by a clinician from another practice."
         self.assertEqual(chat_output.text,expected_output)
     
     def test_missed_appointment(self):
@@ -626,13 +626,13 @@ class ChatbotTest(unittest.TestCase):
 
     def test_random_string(self):
         chat_input = self.driver.find_element(by=By.XPATH , value = "//input[@id='textInput']")
-        chat_input.send_keys(" ".join(random.choices(string.ascii_uppercase + string.ascii_lowercase, k=5)))
+        chat_input.send_keys(" ".join(random.choices(string.ascii_uppercase + string.ascii_lowercase, k=10)))
         chat_input.send_keys(Keys.RETURN)
         time.sleep(3)
         
         # check if the response matches the expected output
         chat_output = self.driver.find_element(by=By.XPATH , value ="//div[@class='msg left-msg']//div[@class='msg-text']")
-        expected_output = "Sorry, I am still learning. To help you further, you can find out more information at https://www.nhs.uk/nhs-services/gps/"
+        expected_output = "Sorry, I am still learning. To help you further, you can find out more information at https://www.wheatfieldsurgery.co.uk/"
         self.assertEqual(chat_output.text,expected_output)
     
     def test_functionality(self):

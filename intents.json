@@ -48,7 +48,9 @@
       "patterns": [
         "How can I get a repeat prescription?",
         "What is the process for ordering repeat prescriptions for my children?",
-        "Prescription - what is this?"
+        "Prescription - what is this?",
+        "I need a repeat prescription",
+        "Request a repeat prescription"
 
       ],
       "responses": [
@@ -78,7 +80,8 @@
     {
       "tag": "GP-repeat-prescription",
       "patterns": [
-        "Do I need to see my GP to order a repeat prescription?"
+        "Do I need to see my GP to order a repeat prescription?",
+        "Do I need to see my GP to request a repeat prescription?"
       ],
       "responses": [
         "You do not need to see a GP to order a repeat prescription. But you can ask for your medicine at the surgery if you do not want to do this online."
@@ -159,15 +162,11 @@
       "tag": "apppointment-online",
       "patterns": [
         "How do I cancel an appointment online?",
-        "I would like to change my appointment online",
-        "I would like to cancel my appointment online",
+        "I would like to change my appointment",
         "How do I reschedule an appointment online?",
-        "How do I cancel an appointment online?",
         "How do I book an appointment online?",
-        "Can I book my appointment online?",
+        "Can I cancel my appointment online?",
         "Change appointment booking online",
-        "Cancel appointment booking online",
-        "Reschedule appointment booking online",
         "Book appointment online"
       ],
       "responses": [
@@ -234,7 +233,7 @@
         "I need a specialist referral",
         "How can I get a specialist referral from my GP",
         "Letter of referral",
-        "Specialist referral"
+        "Specialist referral request"
       ],
       "responses": [
         "A specialist will only see you with a letter of referral from your GP. The letter will give the specialist essential background information, such as your medical history, and it'll also contain details that the specialist needs to pay particular attention to.",
@@ -261,6 +260,7 @@
         "GP opening hours",
         "Opening hours",
         "What time does the practice open?",
+        "What time do you open?",
         "Opning hours"
       ],
       "responses": [
@@ -404,7 +404,7 @@
         "Register with GP"
       ],
       "responses": [
-        "Anyone in England can register with a GP surgery. It's free to register. You do not need proof of address or immigration status, ID or an NHS number. GP surgeries are usually the first contact if you have a health problem. They can treat many conditions and give health advice. They can also refer you to other NHS services."
+        "Anyone in England can register with a GP surgery. It's free to register. You can register by contacting the surgery and filling out a form. You do not need proof of address or immigration status, ID or an NHS number. GP surgeries are usually the first contact if you have a health problem. They can treat many conditions and give health advice. They can also refer you to other NHS services."
       ]
     },
     {
