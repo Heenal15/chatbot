@@ -41,7 +41,7 @@
         "What sort of questions?",
         "Could you provide me with a breakdown of what you can do?"
       ],
-      "responses": ["I am here to help with any questions you may have about your GP. For example, appointment bookings, ordering repeat prescriptions and accessing medical records."]
+      "responses": ["I am here to help with any questions you may have about Wheatfield surgery. For example, appointment bookings, ordering repeat prescriptions and accessing medical records."]
     },
     {
       "tag": "prescription",
@@ -52,7 +52,7 @@
 
       ],
       "responses": [
-        "Ask your GP sugery how you should let them know when you need your repeat prescription. They can send your request to a pharmacy."
+        "If you do not have a Systmonline account, you can use fill in the form to request any repeat prescriptions from the Practice. They can send your request to a pharmacy. Please allow 2 working days before collecting your prescription."
       ]
     },
     {
@@ -81,7 +81,7 @@
         "Do I need to see my GP to order a repeat prescription?"
       ],
       "responses": [
-        "You do not need to see a GP to order a repeat prescription. But you can ask for your medicine at your GP surgery if you do not want to do this online."
+        "You do not need to see a GP to order a repeat prescription. But you can ask for your medicine at the surgery if you do not want to do this online."
       ]
     },
     {
@@ -99,7 +99,7 @@
 
       ],
       "responses": [
-        "There are online services and apps you can use to order a repeat prescription. Some GP online services are only available in certain areas. Ask your GP surgery which service your GP surgery uses."
+        "You can use your Systmonline account to request any repeat prescriptions from the Practice."
       ]
     },
     {
@@ -107,20 +107,15 @@
       "patterns": [
         "How do I book an appointment?",
         "Tell me about appointment bookings",
-        "I want to see my GP",
         "I want to book an appointment",
         "I would like to see a doctor",
-        "I want to see a doctor",
-        "I would like to book an appointment",
         "Seeing a doctor",
         "Visting the doctor",
-        "Appointment booking",
         "Booking an appointment",
         "What is the appointment booking process?",
         "How do I see the doctor?",
         "I need to book an appointment",
-        "Appointment booking process",
-        "Appointments"
+        "Appointment booking process"
       ],
       "responses": [
         "You can book an appointment to see your GP online, by phone or in-person, by going into the surgery and talking to the receptionist."
@@ -140,7 +135,7 @@
         "Urgently see the doctor"
       ],
       "responses": [
-        "Call your GP surgery if you need an urgent appointment. If your GP surgery is closed, call 999 if it is an emergency or 111 if you have any urgent queries"
+        "Call the surgery if you need an urgent appointment. If the surgery is closed, call 999 if it is an emergency or 111 if you have any urgent queries"
       ]
     },
     {
@@ -157,7 +152,7 @@
         "Reschedule appointment booking"
       ],
       "responses": [
-        "You can book,cancel or change your GP appointment by contacting GP surgery by phone or through their website."
+        "You can book,cancel or change your appointment by contacting the surgery by phone or through your SystmOnline account."
       ]
     },
     {
@@ -176,7 +171,7 @@
         "Book appointment online"
       ],
       "responses": [
-        "If you are registered with a GP surgery, you can use their online services to book, check or cancel appointments with a healthcare professional. Most GP clinics have online services to book appointments such as SystmOnline."
+        "You can use your SystmOnline account to book, check or cancel appointments with a healthcare professional."
       ]
     },
     {
@@ -201,7 +196,7 @@
         "Book a weekend appointment"
       ],
       "responses": [
-        "Some GP surgeries offer evening and weekend appointments. Appointments are available from 6.30-8pm in the evenings, 9am to 5pm on Saturdays and Sundays. You can request to book an appointment during these times by calling your GP."
+        "Appointments are now available to patients either pre-bookable and on the day from 18:30–20:00 Monday to Friday, Saturday is 8:30—12:30, with pre-booked telephone consultations available on Sunday. During bank holidays appointments will be available 8:30-12:30. If you need to see a GP or practice nurse  during Extended Access times, the appointment may not be at your registered Practice and you may be seen by a clinician from another practice."
       ]
     },
     {
@@ -213,7 +208,7 @@
         "Waiting time to book an appointment"
       ],
       "responses": [
-        "The waiting time for an appointment can vary depending on the availability of your GP and the urgency of your condition. If you require urgent medical attention, your GP may be able to offer you an appointment on the same day."
+        "The waiting time for an appointment can vary depending on the availability of appointments and the urgency of your condition. If you require urgent medical attention, we may be able to offer you an appointment on the same day."
       ]
     },
     {
@@ -226,7 +221,7 @@
         "See GP without an appointment"
       ],
       "responses": [
-        "It is usually necessary to make an appointment to see a GP in the UK. However, some practices offer walk-in clinics or same-day appointments for urgent concerns."
+        "This is not a walk in service so patients need an appointment to be seen by a GP or Practice Nurse. Extended access appointments are in addition to normal surgery opening hours."
       ]
     },
     {
@@ -243,7 +238,7 @@
       ],
       "responses": [
         "A specialist will only see you with a letter of referral from your GP. The letter will give the specialist essential background information, such as your medical history, and it'll also contain details that the specialist needs to pay particular attention to.",
-        "You're entitled to ask for a referral for specialist treatment on the NHS. If you wish to be referred to a specialist in a particular field, such as a cardiologist or gynaecologist, you should see the GP you are registered with."
+        "You're entitled to ask for a referral for specialist treatment on the NHS. If you wish to be referred to a specialist in a particular field, such as a cardiologist or gynaecologist, you should complete the form on our website or see the GP directly."
       ]
     },
     {
@@ -265,10 +260,11 @@
         "What are the practice's opening hours?",
         "GP opening hours",
         "Opening hours",
-        "What time does the practice open?"
+        "What time does the practice open?",
+        "Opning hours"
       ],
       "responses": [
-        "The opening hours for most GP practices are 8:00 am to 6:30 pm on any day from Monday to Friday, excluding bank holidays."
+        "The opening hours are 8:30 am to 6:30 pm, Monday to Friday."
       ]
     },
     {
@@ -280,7 +276,7 @@
         "Out of hours medical emergency"
       ],
       "responses": [
-        "If your GP surgery is closed, call 999 if it is an emergency or 111 if you have any urgent queries."
+        "If the surgery is closed, call 999 if it is an emergency or 111 if you have any urgent queries."
       ]
     },
     {
@@ -309,15 +305,11 @@
       "tag": "vaccinations",
       "patterns": [
         "Tell me about vaccinations",
-        "Vaccination at the surgery",
         "Can I get vaccinated at the surgery",
-        "Vaccinations at GP",
-        "I want to book a vaccination appointment",
-        "Vaccination appointment",
-        "Book a vaccination appointment"
+        "I want to book a vaccination appointment"
       ],
       "responses": [
-        "Your GP can provide a number of vaccinations such as the flu vaccine and some travel vaccinations."
+        "We can provide a number of vaccinations such as the flu vaccine and some travel vaccinations."
       ]
     },
     {
@@ -335,7 +327,7 @@
         "Book a flu jab appointment"
       ],
       "responses": [
-        "If you're eligible for a free flu vaccine, you can book an appointment at your GP surgery."
+        "If you're eligible for a free flu vaccine, you can book an appointment for it."
       ]
     },
     {
@@ -349,7 +341,7 @@
         "How much to get travel vaccinations"
       ],
       "responses": [
-        "If the GP practice is signed up to provide NHS travel vaccines, these can be provided to you free of charge. Other non-NHS travel vaccines may be charged for by the GP."
+        "If you require any vaccinations relating to foreign travel, you need to make an appointment with the practice nurse to discuss your travel arrangements. This will include which countries and areas within countries that you are visiting to determine what vaccinations are required. It is important to make this initial appointment as early as possible (at least 6 weeks before you travel) as a second appointment will be required with the practice nurse to actually receive the vaccinations."
       ]
     },
     {
@@ -363,7 +355,7 @@
         "Access my medical records"
       ],
       "responses": [
-        "Medical records hold information about you. You'll have separate records for any NHS service you go to including your GP surgery, hospital, dentist or opticians. Your GP record includes information like any conditions or allergies you have and any medicine you're taking. There are 3 ways to access your medical records: using your NHS account, other online services and directly speaking to your GP surgery.",
+        "Medical records hold information about you. You'll have separate records for any NHS service you go to including the surgery, hospital, dentist or opticians. Your GP record includes information like any conditions or allergies you have and any medicine you're taking. There are 3 ways to access your medical records: using your NHS account, your SystmOnline account and directly speaking to the surgery.",
         "Most patients who use online services will automatically be given access to more information added to their GP record from November 2022 onwards, including letters, test results and appointment notes."
       ]
     },
@@ -376,7 +368,7 @@
         "I want to access my medical records using my NHS account"
       ],
       "responses": [
-        "You can get your GP record by logging into your account using the NHS app or NHS website. First, you need to register for online services and prove who you are. You can do this when you create an account.You'll need to ask your GP surgery for online access to your full record, or you'll only see your medicines and allergies."
+        "You can get your GP record by logging into your account using the NHS app or NHS website. First, you need to register for online services and prove who you are. You can do this when you create an account.You'll need to ask the surgery for online access to your full record, or you'll only see your medicines and allergies."
       ]
     },
     {
@@ -388,7 +380,7 @@
         "Using online services, I want to access my medical records"
       ],
       "responses": [
-        "You might be able to use other GP online services and apps to get your GP record. First, you need to register for online services and prove who you are. You'll need to ask your GP surgery for online access to your full record, or you'll only see your medicines and allergies. Some services and apps are only available in certain areas. Ask your GP surgery which one you can use."
+        "You can use your SystmOnline account to get your GP record. First, you need to register for online services and prove who you are. You'll need to ask your GP surgery for online access to your full record, or you'll only see your medicines and allergies. Some services and apps are only available in certain areas. Ask your GP surgery which one you can use."
       ]
     },
     {
@@ -400,7 +392,7 @@
         "Test results"
       ],
       "responses": [
-        "If you are registered for online service you can access your test results directly via the NHS app, otherwise you should call your GP."
+        "If you are registered for online service you can access your test results directly via the NHS app, otherwise you should call the Practice."
       ]
     },
     {
@@ -424,7 +416,7 @@
         "Register with a GP outside my area"
       ],
       "responses": [
-        "Yes, you can. However, the GP surgery can refuse registration for reasons such as they are not taking new patients or it's too far away from your home and you need home visits."
+        "Yes, you can. However, we can refuse registration for reasons such as if we are not taking new patients or it's too far away from your home and you need home visits."
       ]
     },
     {
@@ -448,7 +440,7 @@
         "GP said no to register me"
       ],
       "responses": [
-        "The GP surgery can refuse registration for reasons such as they are not taking new patients or it's too far away from your home and you need home visits."
+        "We can refuse registration for reasons such as if we are not taking new patients or it's too far away from your home and you need home visits."
       ]
     },
     {
@@ -460,17 +452,7 @@
         "GP visitng patients at home who are outside their area"
       ],
       "responses": [
-        "If you live outside of their area, the GP surgery might not be able to offer home visits. Other arrangements might be made if you are not well enough to go to the GP surgery. Contact your GP for further information."
-      ]
-    },
-    {
-      "tag": "find-GP",
-      "patterns": [
-        "How do I find a GP surgery in the area where I want to register?",
-        "Find a GP"
-      ],
-      "responses": [
-        "You can find a GP on the NHS website."
+        "If you live outside of our area, the GP surgery might not be able to offer home visits. Other arrangements might be made if you are not well enough to go to the GP surgery. Contact us for further information."
       ]
     },
     {
@@ -515,7 +497,7 @@
       ],
       "responses": [
         "A GP will only visit you at home if they think that your medical condition requires it. A GP can also decide how urgently a visit is needed. Due to increasing demand GPs can no longer automatically visit any patient who requests a home visit. All visits must now be triaged and dealt with according to clinical need.",
-        "If you live in their area, home visits can be made. Contact your GP for further information."
+        "If you live in our area, home visits can be made."
       ]
     },
     {
@@ -559,7 +541,7 @@
         "Online consultation"
       ],
       "responses": [
-        "Most GP surgeries, hospitals, mental health services and community care services now offer video consultations. This is where you speak to a doctor or healthcare professional using the video camera in your smartphone, tablet or computer."
+        "We do offer video consultations. This is where you speak to a doctor or healthcare professional using the video camera in your smartphone, tablet or computer."
       ]
     },
     {
@@ -640,10 +622,12 @@
     {
       "tag": "online-health-services",
       "patterns": [
-        "What kind of health services can be accessed online if you are registered with a GP surgery?"
+        "What kind of health services can be accessed online if you are registered with a GP surgery?",
+        "Use of SystmOnline account",
+        "WHat can I use my SystmOnline account for?"
       ],
       "responses": [
-        "If you are registered with a GP surgery, you can access some health services online, such as contacting your GP, nurse or other healthcare professional for advice and support, ordering repeat prescriptions, seeing parts of your health record, including information about medicines, vaccinations and test results, seeing communications between your GP surgery and other services, such as hospitals, and booking, checking or cancelling appointments with a GP, nurse or other healthcare professional."
+        "You can use your SystmOnline account to access some health services online, such as contacting your GP, nurse or other healthcare professional for advice and support, ordering repeat prescriptions, seeing parts of your health record, including information about medicines, vaccinations and test results, seeing communications between your GP surgery and other services, such as hospitals, and booking, checking or cancelling appointments with a GP, nurse or other healthcare professional."
       ]
     },
     {
@@ -656,7 +640,7 @@
         "Information from online health record"
       ],
       "responses": [
-        "Through online health services, you can see parts of your health record, including information about medicines, vaccinations, and test results, as well as communications between your GP surgery and other services such as hospitals."
+        "Through online health services (NHS App or SystmOnline account), you can see parts of your health record, including information about medicines, vaccinations, and test results, as well as communications between your GP surgery and other services such as hospitals."
       ]
     },
     {
@@ -682,7 +666,7 @@
         "I want to find out which online health service provider my GP uses"
       ],
       "responses": [
-        "To find out which online health service providers you can use, you should check your GP surgery's website to see what services are available online and which providers you can use."
+        "To access online health services you can use your SystmOnline account or the NHS App."
       ]
     },
     {

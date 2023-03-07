@@ -44,7 +44,7 @@ def get_response(msg):
         for intent in intents['intents']:
             if tag == intent["tag"]:
                 return random.choice(intent['responses'])
-    return "Sorry, I am still learning. To help you further, you can find out more information at https://www.nhs.uk/nhs-services/gps/"
+    return "Sorry, I am still learning. To help you further, you can find out more information at https://www.wheatfieldsurgery.co.uk/"
 
     
 

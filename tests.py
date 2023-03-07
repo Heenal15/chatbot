@@ -52,7 +52,7 @@ class ChatbotTest(unittest.TestCase):
         
         # check if the response matches the expected output
         chat_output = self.driver.find_element(by=By.XPATH , value ="//div[@class='msg left-msg']//div[@class='msg-text']")
-        expected_output = "There are online services and apps you can use to order a repeat prescription. Some GP online services are only available in certain areas. Ask your GP surgery which service your GP surgery uses."
+        expected_output = "You can use your Systmonline account to request any repeat prescriptions from the Practice."
         self.assertEqual(chat_output.text, expected_output)
 
     def test_book_appointments(self):
@@ -74,8 +74,10 @@ class ChatbotTest(unittest.TestCase):
         
         # check if the response matches the expected output
         chat_output = self.driver.find_element(by=By.XPATH , value ="//div[@class='msg left-msg']//div[@class='msg-text']")
-        expected_output = ["Medical records hold information about you. You'll have separate records for any NHS service you go to including your GP surgery, hospital, dentist or opticians. Your GP record includes information like any conditions or allergies you have and any medicine you're taking. There are 3 ways to access your medical records: using your NHS account, other online services and directly speaking to your GP surgery.",
-        "Most patients who use online services will automatically be given access to more information added to their GP record from November 2022 onwards, including letters, test results and appointment notes."]
+        expected_output = [
+        "Medical records hold information about you. You'll have separate records for any NHS service you go to including the surgery, hospital, dentist or opticians. Your GP record includes information like any conditions or allergies you have and any medicine you're taking. There are 3 ways to access your medical records: using your NHS account, your SystmOnline account and directly speaking to the surgery.",
+        "Most patients who use online services will automatically be given access to more information added to their GP record from November 2022 onwards, including letters, test results and appointment notes."
+        ]
         self.assertTrue(chat_output.text in expected_output)
 
     def test_home_visits(self):
@@ -87,7 +89,7 @@ class ChatbotTest(unittest.TestCase):
         # check if the response matches the expected output
         chat_output = self.driver.find_element(by=By.XPATH , value ="//div[@class='msg left-msg']//div[@class='msg-text']")
         expected_output = ["A GP will only visit you at home if they think that your medical condition requires it. A GP can also decide how urgently a visit is needed. Due to increasing demand GPs can no longer automatically visit any patient who requests a home visit. All visits must now be triaged and dealt with according to clinical need.",
-        "If you live in their area, home visits can be made. Contact your GP for further information."]
+        "If you live in our area, home visits can be made."]
         self.assertTrue(chat_output.text in expected_output)
 
     def test_specialist_referrals(self):
@@ -98,8 +100,10 @@ class ChatbotTest(unittest.TestCase):
         
         # check if the response matches the expected output
         chat_output = self.driver.find_element(by=By.XPATH , value ="//div[@class='msg left-msg']//div[@class='msg-text']")
-        expected_output = ["A specialist will only see you with a letter of referral from your GP. The letter will give the specialist essential background information, such as your medical history, and it'll also contain details that the specialist needs to pay particular attention to.",
-        "You're entitled to ask for a referral for specialist treatment on the NHS. If you wish to be referred to a specialist in a particular field, such as a cardiologist or gynaecologist, you should see the GP you are registered with."]
+        expected_output = [
+        "A specialist will only see you with a letter of referral from your GP. The letter will give the specialist essential background information, such as your medical history, and it'll also contain details that the specialist needs to pay particular attention to.",
+        "You're entitled to ask for a referral for specialist treatment on the NHS. If you wish to be referred to a specialist in a particular field, such as a cardiologist or gynaecologist, you should complete the form on our website or see the GP directly."
+        ]
         self.assertTrue(chat_output.text in expected_output)
 
     def test_appointment_arrival(self):
@@ -143,7 +147,7 @@ class ChatbotTest(unittest.TestCase):
         
         # check if the response matches the expected output
         chat_output = self.driver.find_element(by=By.XPATH , value ="//div[@class='msg left-msg']//div[@class='msg-text']")
-        expected_output = "To find out which online health service providers you can use, you should check your GP surgery's website to see what services are available online and which providers you can use."
+        expected_output = "To access online health services you can use your SystmOnline account or the NHS App."
         self.assertEqual(chat_output.text,expected_output)
     
     def test_online_contact(self):
@@ -165,7 +169,7 @@ class ChatbotTest(unittest.TestCase):
         
         # check if the response matches the expected output
         chat_output = self.driver.find_element(by=By.XPATH , value ="//div[@class='msg left-msg']//div[@class='msg-text']")
-        expected_output = "Through online health services, you can see parts of your health record, including information about medicines, vaccinations, and test results, as well as communications between your GP surgery and other services such as hospitals."
+        expected_output = "Through online health services (NHS App or SystmOnline account), you can see parts of your health record, including information about medicines, vaccinations, and test results, as well as communications between your GP surgery and other services such as hospitals."
         self.assertEqual(chat_output.text,expected_output)
 
     def test_online_health_services(self):
@@ -176,7 +180,7 @@ class ChatbotTest(unittest.TestCase):
         
         # check if the response matches the expected output
         chat_output = self.driver.find_element(by=By.XPATH , value ="//div[@class='msg left-msg']//div[@class='msg-text']")
-        expected_output = "If you are registered with a GP surgery, you can access some health services online, such as contacting your GP, nurse or other healthcare professional for advice and support, ordering repeat prescriptions, seeing parts of your health record, including information about medicines, vaccinations and test results, seeing communications between your GP surgery and other services, such as hospitals, and booking, checking or cancelling appointments with a GP, nurse or other healthcare professional."
+        expected_output = "You can use your SystmOnline account to access some health services online, such as contacting your GP, nurse or other healthcare professional for advice and support, ordering repeat prescriptions, seeing parts of your health record, including information about medicines, vaccinations and test results, seeing communications between your GP surgery and other services, such as hospitals, and booking, checking or cancelling appointments with a GP, nurse or other healthcare professional."
         self.assertEqual(chat_output.text,expected_output)
      
     def test_video_consultation_prescribe(self):
@@ -264,7 +268,7 @@ class ChatbotTest(unittest.TestCase):
         
         # check if the response matches the expected output
         chat_output = self.driver.find_element(by=By.XPATH , value ="//div[@class='msg left-msg']//div[@class='msg-text']")
-        expected_output = "Most GP surgeries, hospitals, mental health services and community care services now offer video consultations. This is where you speak to a doctor or healthcare professional using the video camera in your smartphone, tablet or computer."
+        expected_output = "We do offer video consultations. This is where you speak to a doctor or healthcare professional using the video camera in your smartphone, tablet or computer."
         self.assertEqual(chat_output.text,expected_output)
 
     def test_GP_sick_note(self):
@@ -321,17 +325,6 @@ class ChatbotTest(unittest.TestCase):
         chat_output = self.driver.find_element(by=By.XPATH , value ="//div[@class='msg left-msg']//div[@class='msg-text']")
         expected_output = "You can change your GP surgery if you need to. This might be because: you have moved, you have had problems with your current practice, you were removed from the patient list. You should tell the GP surgery if you change address or move out of the area."
         self.assertEqual(chat_output.text,expected_output)
-
-    def test_find_GP(self):
-        chat_input = self.driver.find_element(by=By.XPATH , value = "//input[@id='textInput']")
-        chat_input.send_keys("How do I find a GP surgery in the area where I want to register?")
-        chat_input.send_keys(Keys.RETURN)
-        time.sleep(3)
-        
-        # check if the response matches the expected output
-        chat_output = self.driver.find_element(by=By.XPATH , value ="//div[@class='msg left-msg']//div[@class='msg-text']")
-        expected_output = "You can find a GP on the NHS website."
-        self.assertEqual(chat_output.text,expected_output)
     
     def test_home_visit_outside_area(self):
         chat_input = self.driver.find_element(by=By.XPATH , value = "//input[@id='textInput']")
@@ -341,7 +334,7 @@ class ChatbotTest(unittest.TestCase):
         
         # check if the response matches the expected output
         chat_output = self.driver.find_element(by=By.XPATH , value ="//div[@class='msg left-msg']//div[@class='msg-text']")
-        expected_output = "If you live outside of their area, the GP surgery might not be able to offer home visits. Other arrangements might be made if you are not well enough to go to the GP surgery. Contact your GP for further information."
+        expected_output = "If you live outside of our area, the GP surgery might not be able to offer home visits. Other arrangements might be made if you are not well enough to go to the GP surgery. Contact us for further information."
         self.assertEqual(chat_output.text,expected_output)
     
     def test_refuse_registration_GP(self):
@@ -352,7 +345,7 @@ class ChatbotTest(unittest.TestCase):
         
         # check if the response matches the expected output
         chat_output = self.driver.find_element(by=By.XPATH , value ="//div[@class='msg left-msg']//div[@class='msg-text']")
-        expected_output = "The GP surgery can refuse registration for reasons such as they are not taking new patients or it's too far away from your home and you need home visits."
+        expected_output = "We can refuse registration for reasons such as if we are not taking new patients or it's too far away from your home and you need home visits."
         self.assertEqual(chat_output.text,expected_output)
 
     def test_restriction_outside_area_GP(self):
@@ -374,7 +367,7 @@ class ChatbotTest(unittest.TestCase):
         
         # check if the response matches the expected output
         chat_output = self.driver.find_element(by=By.XPATH , value ="//div[@class='msg left-msg']//div[@class='msg-text']")
-        expected_output = "Yes, you can. However, the GP surgery can refuse registration for reasons such as they are not taking new patients or it's too far away from your home and you need home visits."
+        expected_output = "Yes, you can. However, we can refuse registration for reasons such as if we are not taking new patients or it's too far away from your home and you need home visits."
         self.assertEqual(chat_output.text,expected_output)
 
     def test_register_GP(self):
@@ -396,7 +389,7 @@ class ChatbotTest(unittest.TestCase):
         
         # check if the response matches the expected output
         chat_output = self.driver.find_element(by=By.XPATH , value ="//div[@class='msg left-msg']//div[@class='msg-text']")
-        expected_output = "If you are registered for online service you can access your test results directly via the NHS app, otherwise you should call your GP."
+        expected_output = "If you are registered for online service you can access your test results directly via the NHS app, otherwise you should call the Practice."
         self.assertEqual(chat_output.text,expected_output)
 
     def test_medical_records_online(self):
@@ -407,7 +400,7 @@ class ChatbotTest(unittest.TestCase):
         
         # check if the response matches the expected output
         chat_output = self.driver.find_element(by=By.XPATH , value ="//div[@class='msg left-msg']//div[@class='msg-text']")
-        expected_output = "You might be able to use other GP online services and apps to get your GP record. First, you need to register for online services and prove who you are. You'll need to ask your GP surgery for online access to your full record, or you'll only see your medicines and allergies. Some services and apps are only available in certain areas. Ask your GP surgery which one you can use."
+        expected_output = "You can use your SystmOnline account to get your GP record. First, you need to register for online services and prove who you are. You'll need to ask your GP surgery for online access to your full record, or you'll only see your medicines and allergies. Some services and apps are only available in certain areas. Ask your GP surgery which one you can use."
         self.assertEqual(chat_output.text,expected_output)
     
     def test_medical_records_NHS(self):
@@ -418,7 +411,7 @@ class ChatbotTest(unittest.TestCase):
         
         # check if the response matches the expected output
         chat_output = self.driver.find_element(by=By.XPATH , value ="//div[@class='msg left-msg']//div[@class='msg-text']")
-        expected_output = "You can get your GP record by logging into your account using the NHS app or NHS website. First, you need to register for online services and prove who you are. You can do this when you create an account.You'll need to ask your GP surgery for online access to your full record, or you'll only see your medicines and allergies."
+        expected_output = "You can get your GP record by logging into your account using the NHS app or NHS website. First, you need to register for online services and prove who you are. You can do this when you create an account.You'll need to ask the surgery for online access to your full record, or you'll only see your medicines and allergies."
         self.assertEqual(chat_output.text,expected_output)
 
     def test_vaccinations(self):
@@ -429,7 +422,7 @@ class ChatbotTest(unittest.TestCase):
         
         # check if the response matches the expected output
         chat_output = self.driver.find_element(by=By.XPATH , value ="//div[@class='msg left-msg']//div[@class='msg-text']")
-        expected_output = "Your GP can provide a number of vaccinations such as the flu vaccine and some travel vaccinations."
+        expected_output = "We can provide a number of vaccinations such as the flu vaccine and some travel vaccinations."
         self.assertEqual(chat_output.text,expected_output)
 
     def test_travel_vaccinations(self):
@@ -440,7 +433,7 @@ class ChatbotTest(unittest.TestCase):
         
         # check if the response matches the expected output
         chat_output = self.driver.find_element(by=By.XPATH , value ="//div[@class='msg left-msg']//div[@class='msg-text']")
-        expected_output = "If the GP practice is signed up to provide NHS travel vaccines, these can be provided to you free of charge. Other non-NHS travel vaccines may be charged for by the GP."
+        expected_output = "If you require any vaccinations relating to foreign travel, you need to make an appointment with the practice nurse to discuss your travel arrangements. This will include which countries and areas within countries that you are visiting to determine what vaccinations are required. It is important to make this initial appointment as early as possible (at least 6 weeks before you travel) as a second appointment will be required with the practice nurse to actually receive the vaccinations."
         self.assertEqual(chat_output.text,expected_output)
 
     def test_flu_vaccinations(self):
@@ -451,7 +444,7 @@ class ChatbotTest(unittest.TestCase):
         
         # check if the response matches the expected output
         chat_output = self.driver.find_element(by=By.XPATH , value ="//div[@class='msg left-msg']//div[@class='msg-text']")
-        expected_output = "If you're eligible for a free flu vaccine, you can book an appointment at your GP surgery."
+        expected_output = "If you're eligible for a free flu vaccine, you can book an appointment for it."
         self.assertEqual(chat_output.text,expected_output)
 
     def test_complaints(self):
@@ -473,7 +466,7 @@ class ChatbotTest(unittest.TestCase):
         
         # check if the response matches the expected output
         chat_output = self.driver.find_element(by=By.XPATH , value ="//div[@class='msg left-msg']//div[@class='msg-text']")
-        expected_output = "If your GP surgery is closed, call 999 if it is an emergency or 111 if you have any urgent queries."
+        expected_output = "If the surgery is closed, call 999 if it is an emergency or 111 if you have any urgent queries."
         self.assertEqual(chat_output.text,expected_output)
 
     def test_opening_hours(self):
@@ -484,7 +477,7 @@ class ChatbotTest(unittest.TestCase):
         
         # check if the response matches the expected output
         chat_output = self.driver.find_element(by=By.XPATH , value ="//div[@class='msg left-msg']//div[@class='msg-text']")
-        expected_output = "The opening hours for most GP practices are 8:00 am to 6:30 pm on any day from Monday to Friday, excluding bank holidays."
+        expected_output = "The opening hours are 8:30 am to 6:30 pm, Monday to Friday."
         self.assertEqual(chat_output.text,expected_output)
 
     def test_cancellation_policy(self):
@@ -506,7 +499,7 @@ class ChatbotTest(unittest.TestCase):
         
         # check if the response matches the expected output
         chat_output = self.driver.find_element(by=By.XPATH , value ="//div[@class='msg left-msg']//div[@class='msg-text']")
-        expected_output = "It is usually necessary to make an appointment to see a GP in the UK. However, some practices offer walk-in clinics or same-day appointments for urgent concerns."
+        expected_output = "This is not a walk in service so patients need an appointment to be seen by a GP or Practice Nurse. Extended access appointments are in addition to normal surgery opening hours."
         self.assertEqual(chat_output.text,expected_output)
 
     def test_wait_appointment(self):
@@ -517,7 +510,7 @@ class ChatbotTest(unittest.TestCase):
         
         # check if the response matches the expected output
         chat_output = self.driver.find_element(by=By.XPATH , value ="//div[@class='msg left-msg']//div[@class='msg-text']")
-        expected_output = "The waiting time for an appointment can vary depending on the availability of your GP and the urgency of your condition. If you require urgent medical attention, your GP may be able to offer you an appointment on the same day."
+        expected_output = "The waiting time for an appointment can vary depending on the availability of appointments and the urgency of your condition. If you require urgent medical attention, we may be able to offer you an appointment on the same day."
         self.assertEqual(chat_output.text,expected_output)
 
     def test_evening_weekend_appointment(self):
@@ -528,7 +521,7 @@ class ChatbotTest(unittest.TestCase):
         
         # check if the response matches the expected output
         chat_output = self.driver.find_element(by=By.XPATH , value ="//div[@class='msg left-msg']//div[@class='msg-text']")
-        expected_output = "Some GP surgeries offer evening and weekend appointments. Appointments are available from 6.30-8pm in the evenings, 9am to 5pm on Saturdays and Sundays. You can request to book an appointment during these times by calling your GP."
+        expected_output = "Appointments are now available to patients either pre-bookable and on the day from 18:30–20:00 Monday to Friday, Saturday is 8:30—12:30, with pre-booked telephone consultations available on Sunday. During bank holidays appointments will be available 8:30-12:30. If you need to see a GP or practice nurse  during Extended Access times, the appointment may not be at your registered Practice and you may be seen by a clinician from another practice."
         self.assertEqual(chat_output.text,expected_output)
     
     def test_missed_appointment(self):
@@ -551,7 +544,7 @@ class ChatbotTest(unittest.TestCase):
         
         # check if the response matches the expected output
         chat_output = self.driver.find_element(by=By.XPATH , value ="//div[@class='msg left-msg']//div[@class='msg-text']")
-        expected_output = "If you are registered with a GP surgery, you can use their online services to book, check or cancel appointments with a healthcare professional. Most GP clinics have online services to book appointments such as SystmOnline."
+        expected_output = "You can use your SystmOnline account to book, check or cancel appointments with a healthcare professional."
         self.assertEqual(chat_output.text,expected_output)
 
     def test_appointment_changes(self):
@@ -562,7 +555,7 @@ class ChatbotTest(unittest.TestCase):
         
         # check if the response matches the expected output
         chat_output = self.driver.find_element(by=By.XPATH , value ="//div[@class='msg left-msg']//div[@class='msg-text']")
-        expected_output = "You can book,cancel or change your GP appointment by contacting GP surgery by phone or through their website."
+        expected_output = "You can book,cancel or change your appointment by contacting the surgery by phone or through your SystmOnline account."
         self.assertEqual(chat_output.text,expected_output)
 
     def test_appointment_urgent(self):
@@ -573,7 +566,7 @@ class ChatbotTest(unittest.TestCase):
         
         # check if the response matches the expected output
         chat_output = self.driver.find_element(by=By.XPATH , value ="//div[@class='msg left-msg']//div[@class='msg-text']")
-        expected_output = "Call your GP surgery if you need an urgent appointment. If your GP surgery is closed, call 999 if it is an emergency or 111 if you have any urgent queries"
+        expected_output = "Call the surgery if you need an urgent appointment. If the surgery is closed, call 999 if it is an emergency or 111 if you have any urgent queries"
         self.assertEqual(chat_output.text,expected_output)
 
     def test_GP_repeat_prescription(self):
@@ -584,7 +577,7 @@ class ChatbotTest(unittest.TestCase):
         
         # check if the response matches the expected output
         chat_output = self.driver.find_element(by=By.XPATH , value ="//div[@class='msg left-msg']//div[@class='msg-text']")
-        expected_output = "You do not need to see a GP to order a repeat prescription. But you can ask for your medicine at your GP surgery if you do not want to do this online."
+        expected_output = "You do not need to see a GP to order a repeat prescription. But you can ask for your medicine at the surgery if you do not want to do this online."
         self.assertEqual(chat_output.text,expected_output)
 
     def test_about_repeat_prescription(self):
@@ -617,7 +610,7 @@ class ChatbotTest(unittest.TestCase):
         
         # check if the response matches the expected output
         chat_output = self.driver.find_element(by=By.XPATH , value ="//div[@class='msg left-msg']//div[@class='msg-text']")
-        expected_output = "Ask your GP sugery how you should let them know when you need your repeat prescription. They can send your request to a pharmacy."
+        expected_output = "If you do not have a Systmonline account, you can use fill in the form to request any repeat prescriptions from the Practice. They can send your request to a pharmacy. Please allow 2 working days before collecting your prescription."
         self.assertEqual(chat_output.text,expected_output)
     
     def test_thank_you(self):
@@ -650,7 +643,7 @@ class ChatbotTest(unittest.TestCase):
         
         # check if the response matches the expected output
         chat_output = self.driver.find_element(by=By.XPATH , value ="//div[@class='msg left-msg']//div[@class='msg-text']")
-        expected_output = "I am here to help with any questions you may have about your GP. For example, appointment bookings, ordering repeat prescriptions and accessing medical records."
+        expected_output = "I am here to help with any questions you may have about Wheatfield surgery. For example, appointment bookings, ordering repeat prescriptions and accessing medical records."
         self.assertEqual(chat_output.text,expected_output)
 
     def tearDown(self):
