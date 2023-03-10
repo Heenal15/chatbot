@@ -1,6 +1,9 @@
+# Credit: Followed online tutorial link https://www.youtube.com/watch?v=RpWeNzfSUHw
+# Link to tutorial GitHub repository https://github.com/patrickloeber/pytorch-chatbot 
+
 import numpy as np
 import nltk
-# nltk.download('punkt')
+# nltk.download('punkt') -> pre-trained tokenizer
 from nltk.stem.porter import PorterStemmer
 stemmer = PorterStemmer()
 
@@ -30,7 +33,7 @@ def bag_of_words(tokenized_sentence, words):
     example:
     sentence = ["hello", "how", "are", "you"]
     words = ["hi", "hello", "I", "you", "bye", "thank", "cool"]
-    bog   = [  0 ,    1 ,    0 ,   1 ,    0 ,    0 ,      0]
+    bag   = [  0 ,    1 ,    0 ,   1 ,    0 ,    0 ,      0]
     """
     # stem each word
     sentence_words = [stem(word) for word in tokenized_sentence]

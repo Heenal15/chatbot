@@ -1,5 +1,11 @@
 # Implementation of a FAQ Chatbot in PyTorch.  
-Simple chatbot implementation with PyTorch. 
+Simple chatbot implementation with PyTorch.
+
+# Source code credit
+Online tutorial link: https://www.youtube.com/watch?v=RpWeNzfSUHw
+Link to tutorial GitHub repository: https://github.com/patrickloeber/pytorch-chatbot
+User Interface Tutorial Link: https://studygyaan.com/python/create-web-based-chatbot-in-python-django-flask
+Link to GitHub repository: https://github.com/huzaifsayed/coronabot-chatterbot
 
 # Inspired by
 The approach is inspired by this article and ported to PyTorch: [https://chatbotsmagazine.com/contextual-chat-bots-with-tensorflow-4391749d0077](https://chatbotsmagazine.com/contextual-chat-bots-with-tensorflow-4391749d0077).

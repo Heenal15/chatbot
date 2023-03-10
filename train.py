@@ -1,3 +1,6 @@
+# Credit: Followed online tutorial link https://www.youtube.com/watch?v=RpWeNzfSUHw
+# Link to tutorial GitHub repository https://github.com/patrickloeber/pytorch-chatbot 
+
 import numpy as np
 import random
 import json

@@ -1,3 +1,6 @@
+# Credit: Followed online tutorial link: https://studygyaan.com/python/create-web-based-chatbot-in-python-django-flask
+# Link to tutorial GitHub repository: https://github.com/huzaifsayed/coronabot-chatterbot/blob/master/app.py
+
 from chat import get_response, bot_name
 
 from flask import Flask, render_template, request

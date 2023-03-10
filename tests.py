@@ -1,3 +1,5 @@
+# Automated Selenium Unit Testing inspired from 6CCS3SMT - Software Measurement and Testing module led by Laurence Tratt
+
 import unittest
 import random
 import string
@@ -11,6 +13,7 @@ import time
 class ChatbotTest(unittest.TestCase):
     def setUp(self):
         # set up the webdriver
+        # run command python app.py
         self.driver = webdriver.Firefox(service=Service(GeckoDriverManager().install()))
         self.driver.get("http://localhost:8080")
         time.sleep(10)
@@ -626,7 +629,7 @@ class ChatbotTest(unittest.TestCase):
 
     def test_random_string(self):
         chat_input = self.driver.find_element(by=By.XPATH , value = "//input[@id='textInput']")
-        chat_input.send_keys(" ".join(random.choices(string.ascii_uppercase + string.ascii_lowercase, k=10)))
+        chat_input.send_keys(" ".join(random.choices(string.ascii_uppercase + string.ascii_lowercase, k=20)))
         chat_input.send_keys(Keys.RETURN)
         time.sleep(3)
         
