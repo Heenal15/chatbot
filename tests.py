@@ -1,4 +1,4 @@
-# Automated Selenium Unit Testing inspired from 6CCS3SMT - Software Measurement and Testing module led by Laurence Tratt
+# Automated Selenium Unit Testing inspired from 6CCS3SMT - Software Measurement and Testing module led by Prof. Laurence Tratt
 
 import unittest
 import random
