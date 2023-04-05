@@ -34,9 +34,11 @@
     {
       "tag": "functionality",
       "patterns": [
-        "What can you help with?", 
-        "What is your purpose?", 
-        "What sort of questions can you help with?", 
+        "What can you help with?",
+        "I need help",
+        "What can you do?",
+        "What is your purpose?",
+        "What sort of questions can you help with?",
         "What kind of questions should I ask?",
         "What sort of questions?",
         "Could you provide me with a breakdown of what you can do?"
@@ -71,7 +73,8 @@
       "patterns": [
         "What is a repeat prescription?",
         "Can you tell me about repeat prescriptions",
-        "I want to know about repeat prescriptions"
+        "I want to know about repeat prescriptions",
+        "Prescriptions"
       ],
       "responses": [
         "If you take medicine regularly you'll usually have a repeat prescription. This means you can order your medicine when you need it without having to see a GP until your next medicine review."
@@ -135,7 +138,12 @@
         "I want to see a doctor urgently",
         "I would like to book an appointment urgently",
         "What is the policy for urgent appointments?",
-        "Urgently see the doctor"
+        "Urgently see the doctor",
+        "Symptoms",
+        "Feeling unwell",
+        "Cold",
+        "Covid",
+        "Pain"
       ],
       "responses": [
         "Call the surgery if you need an urgent appointment. If the surgery is closed, call 999 if it is an emergency or 111 if you have any urgent queries"
@@ -260,8 +268,13 @@
         "GP opening hours",
         "Opening hours",
         "What time does the practice open?",
+        "What time does the surgery open",
+        "What time does the clinic open",
+        "What are the opening times?",
+        "What time is the surgery open?",
         "What time do you open?",
-        "Opning hours"
+        "Opning hours",
+        "Time"
       ],
       "responses": [
         "The opening hours are 8:30 am to 6:30 pm, Monday to Friday."
@@ -272,8 +285,15 @@
       "patterns": [
         "Who do I contact in the case of a medical emergency outside of surgery hours?",
         "I have a medical emergency and my GP is closed who should I contact?",
+        "Can I visit outside of your normal opening hours?",
+        "Outside of normal opening hours",
         "Medical emergency and GP is closed",
-        "Out of hours medical emergency"
+        "Out of hours medical emergency",
+        "Emergencies",
+        "I have an emergency",
+        "What should I do in an emergency",
+        "I need to go to the hospital",
+        "Hospital"
       ],
       "responses": [
         "If the surgery is closed, call 999 if it is an emergency or 111 if you have any urgent queries."
@@ -295,7 +315,9 @@
         "I want to write a complaint",
         "I want to complain",
         "Complaints process",
-        "Complains"
+        "Complains",
+        "I am not happy with the GP service",
+        "Unhappy with service"
       ],
       "responses": [
         "You can either complain to the NHS service provider directly (such as a GP, dentist surgery or hospital) or to the commissioner of the services, which is the body that pays for the NHS services you use. You cannot apply to both."
@@ -306,7 +328,10 @@
       "patterns": [
         "Tell me about vaccinations",
         "Can I get vaccinated at the surgery",
-        "I want to book a vaccination appointment"
+        "I want to book a vaccination appointment",
+        "vaccinations",
+        "I want to get vaccinated",
+        "vaccines"
       ],
       "responses": [
         "We can provide a number of vaccinations such as the flu vaccine and some travel vaccinations."
@@ -401,7 +426,10 @@
         "How do I register with a GP?",
         "Is it free to register with a GP surgery in England?",
         "Can I register with a GP?",
-        "Register with GP"
+        "Register with GP",
+        "I would like to register",
+        "Register",
+        "Registration"
       ],
       "responses": [
         "Anyone in England can register with a GP surgery. It's free to register. You can register by contacting the surgery and filling out a form. You do not need proof of address or immigration status, ID or an NHS number. GP surgeries are usually the first contact if you have a health problem. They can treat many conditions and give health advice. They can also refer you to other NHS services."
@@ -425,7 +453,7 @@
         "Are there any restrictions on registering with a GP surgery outside my area?",
         "I want to register with a GP outside my area",
         "Restrictions to register with a GP outside my area"
-        
+
       ],
       "responses": [
         "The surgery will decide if they can accept you as a regular patient or accept you without home visits."
@@ -538,10 +566,12 @@
         "Are online consultations available at all GP surgeries?",
         "What is an online consultation?",
         "Book an online consultation",
-        "Online consultation"
+        "Online consultation",
+        "How do I book a video consultation?",
+        "Can I book a video consultation?"
       ],
       "responses": [
-        "We do offer video consultations. This is where you speak to a doctor or healthcare professional using the video camera in your smartphone, tablet or computer."
+        "We do offer video consultations. This is where you speak to a doctor or healthcare professional using the video camera in your smartphone, tablet or computer.  You can request for a video consultation when you book your appointment."
       ]
     },
     {
@@ -696,10 +726,28 @@
       "patterns": [
         "What time should I arrive for my appointment?",
         "When should I come for my appointment?",
-        "Arrival time for appointment"
+        "Arrival time for appointment",
+        "Appointment time"
       ],
       "responses": [
         "You should aim to arrive at least 10 minutes before your appointment."
+      ]
+    },
+    {
+      "tag": "contact-us",
+      "patterns": [
+        "What is your phone number?",
+        "How can I contact you?",
+        "Phone number",
+        "Which number should I call?",
+        "Phone",
+        "Call",
+        "Address",
+        "What is the address of the surgery?",
+        "What is your address?"
+      ],
+      "responses": [
+        "Our address is 60 Wheatfield Rd, Luton LU4 0TR. You can contact us by calling on 01582 601116."
       ]
     }
   ]
