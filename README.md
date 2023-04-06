@@ -13,34 +13,31 @@ The approach is inspired by this article and ported to PyTorch: [https://chatbot
 ## Tutorial link
 [![Alt text](https://img.youtube.com/vi/RpWeNzfSUHw/hqdefault.jpg)](https://www.youtube.com/watch?v=RpWeNzfSUHw&list=PLqnslRFeH2UrFW4AUgn-eY37qOAWQpJyg)
 
+## Deployed Version
+
+The deployed version can be accessed at https://gpfaqchatbot.pythonanywhere.com/
+
 ## Installation
+Installation instructions to build the chatbot in your local development environment from the
+source code:
 
 ### Create an environment
-Whatever you prefer (e.g. `conda` or `venv`)
+To build the chatbot and use it in your local development environment, you must first set up
+and activate a local development environment. From the root of the project:
 ```console
-mkdir myproject
-$ cd myproject
-$ python3 -m venv venv
+$ virtualenv venv
+$ source venv/bin/activate
 ```
 
-### Activate it
-Mac / Linux:
+### Install all required packages
 ```console
-. venv/bin/activate
+$ pip3 install -r requirements.txt
+$ pip install numpy
+$ pip3 install Flask
+$ pip3 install -f torch torchvision
+$ pip install nltk
 ```
-Windows:
-```console
-venv\Scripts\activate
-```
-### Install PyTorch and dependencies
-
-For Installation of PyTorch see [official website](https://pytorch.org/).
-
-You also need `nltk`:
- ```console
-pip install nltk
- ```
-
+### Errors
 If you get an error during the first run, you also need to install `nltk.tokenize.punkt`:
 Run this once in your terminal:
  ```console
@@ -56,8 +53,15 @@ python train.py
 ```
 This will dump `data.pth` file. And then run
 ```console
-python chat.py
+python app.py
 ```
+Open your browser and type in the URL
+http://localhost:8080
+
+## Chatbot Preview
+
+![UI1](https://user-images.githubusercontent.com/78482808/230316772-3875c5af-2592-4b7e-8e8b-610e54aca0d2.png)
+
 ## Additions
 Have a look at [intents.json](intents.json). You can add to it according to your own use case. Just define a new `tag`, possible `patterns`, and possible `responses` for the chat bot. You have to re-run the training whenever this file is modified.
 ```console
